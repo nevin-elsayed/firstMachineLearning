@@ -1,6 +1,6 @@
 # Check the versions of libraries
 
-print('\nVerifying installations of current libraries below \n\n')
+print('\nVerifying installations of current libraries below: \n')
 
 # Python version
 import sys
@@ -42,6 +42,20 @@ from sklearn.svm import SVC
 
 
 # Load dataset
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
+data = "iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = read_csv(url, names=names)
+dataset = read_csv(data, names=names)
+
+# shape, should return (150, 0)
+print("\nDataset Shape:")
+print(dataset.shape)
+
+# head, should return the first 20 tuples
+print("\nDataset Head:")
+print(dataset.head(20))
+
+
+# summary
+print("\nDataset Summary:")
+print(dataset.describe())
+
