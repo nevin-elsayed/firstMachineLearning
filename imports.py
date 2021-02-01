@@ -25,4 +25,4 @@ from sklearn.svm import SVC
 # Load dataset
 data = "iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = read_csv(data, names=names)
+dataset = read_csv(data, names = names)
